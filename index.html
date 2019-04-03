@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="assets/javascript/script.js"></script>
+  <title>Poke Collector Game</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Dokdo|Hind" rel="stylesheet">
+
 </head>
+
+<!-- Body -->
 <body>
-    
+
+  <div class="page-header">
+  	<div class="text-center" id="head">Poke Collector Game!</div>
+  </div>
+  <div id="spacer"></div>
+  <div id="instructions" class="col-sm-12 container">
+  	<h2 class="text-center">Instructions:</h2><br>
+  	<p class="text-center">&#8226; A random number is assigned to TARGET SCORE at start.</p>
+  	<p class="text-center">&#8226; Click a pokemon to add points to your current score.</p>
+  	<p class="text-center">&#8226; The value of each pokemon is random, click for values.</p>
+    <p class="text-center">&#8226; Pokemon is caught if current score matches target score.</p>
+    <p class="text-center">&#8226; Pokemon will flee if current score exceeds target score.</p>
+    <h2 class="text-center"id="winlose"></h2><br>
+  </div>
+  <div class="col-sm-1"></div>
+  <div id="targetScore" class="col-sm-4 text-center well">Target Score</div>
+  
+  <div id="spacer" class="col-sm-2"></div>
+  <div id="trackWL" class="col-sm-4 text-center well">
+
+    <div id="scoreboard">
+  		<p>Caught:</p>
+  		<p>Fled:</p>
+  	</div>
+  <div class="col-sm-1"></div>
+  </div>
+  <div id="pokes" class="jumbotron text-center"></div>
+  <div id="currentScore" class="col-sm-12 text-center">Current Score: 0 </div>
+
+
+<!-- jQuery CDN link -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Script -->
+<script type="text/javascript" src="assets/javascript/script.js"></script>
+
 </body>
 </html>

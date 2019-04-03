@@ -1,0 +1,62 @@
+/* Local styles */
+body {
+	background-color: lightblue;
+}
+
+.page-header {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+	background-color: lightcoral;
+	color: white;
+	padding: 10px;
+	vertical-align: center;
+	font-family: 'Dokdo';
+	font-size: 4em;
+}
+
+#instructions {
+	padding-top: 5px;
+	font-family: 'Hind'; 
+}
+
+.jumbotron {
+	background-color: lightblue;
+	background-size: 50% 100%;
+	margin-bottom: 0px;
+}
+
+.poke-image {
+	  width: 12%;
+	  height: auto;
+	  margin: 20px 15px 0px 15px;
+}
+
+
+#targetScore {
+ 	height: 100px;
+ 	background-color: lightcoral;
+ 	padding-top: 35px;
+ 	font-size: 24px;
+	color: white;
+	vertical-align: middle; 
+	font-family: 'Hind'; 
+}
+
+#trackWL {
+	height: 100px;
+	background-color: lightcoral;
+	padding-top: 12px;
+	font-size: 24px;
+	color: white;
+	font-family: 'Hind'; 
+}
+
+#currentScore {
+	height: 70px;
+	background-color: lightcoral;
+	font-size: 24px;
+	color: white;
+	padding: 20px;
+	font-family: 'Hind'; 
+}
