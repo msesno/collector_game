@@ -11,12 +11,12 @@ var losses = 0;
 var counter = 0;
 
 // funtion for reroll 4 numbers - CANNOT GET WORKING
-// function reroll (){
-// 	var i = clearInterval(fourNumbers);
-// 	for (var i=0; i<4; i++) {	
-// 		fourNumbers.push(numberOptions[Math.floor(Math.random() * numberOptions.length)]);
-// 	}
-// }
+function reroll (){
+	fourNumbers = [];
+	for (var i=0; i<4; i++) {	
+		fourNumbers.push(numberOptions[Math.floor(Math.random() * numberOptions.length)]);
+	}
+}
 
 // assign rng values 1-12 to the four pokes
 var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -76,7 +76,7 @@ $(".poke-image").on("click", function() {
 		targetNumber = Math.floor(Math.random() * (50)) + 70;
 		$("#targetScore").html("Target Score: " + targetNumber);
 		$("#currentScore").html("Current Score: 0 ");
-		// reroll();
+		reroll();
 		// console.log("poke values: " + fourNumbers);
 		// TODO: can't get it to re-select fourNumbers
 		// TODO: clear the "you win"/"you lose" on new iteration of the game
@@ -89,7 +89,7 @@ $(".poke-image").on("click", function() {
 		targetNumber = Math.floor(Math.random() * (50)) + 70;
 		$("#targetScore").html("Target Score: " + targetNumber);
 		$("#currentScore").html("Current Score: 0 ");
-		// reroll();
+		reroll();
 		// console.log("poke values: " + fourNumbers);
 		// TODO: can't get it to re-select fourNumbers
 		// TODO: clear the "you win"/"you lose" on new iteration of the game
